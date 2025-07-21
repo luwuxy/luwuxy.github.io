@@ -1,0 +1,128 @@
+body {
+    background-color: #090c16;
+    color: #e6e6e6;
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden;
+}
+
+.profile h1 {
+    font-size: 1.25rem;
+    margin: 20px 0 5px 0;
+}
+
+.profile p {
+    margin: 0;
+    color: #aaaaaa;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    height: 37.5rem;
+    width: 25rem;
+    border: 2px solid #324f6b;
+    background-color: #101427;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+}
+
+.main-box.active {
+    opacity: 100%;
+    top: 0;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 32%;
+    padding: 20px;
+}
+
+.avatar {
+    width: 8.125rem;
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.categories a {
+    color: #e6e6e6;
+    background-color: #232b52;
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: auto;
+    transition-duration: 0.2s;
+}
+
+#active {
+    background-color: #080a13;
+}
+
+#active:hover {
+    background-color: #191e3a;
+    transition-duration: 0.2s;
+}
+
+.categories a:hover {
+    background-color: #080a13;
+    transition-duration: 0.2s;
+}
+
+.desc {
+    margin: 0 auto 0 auto;
+    background-color: #2e386b;
+    width: 20.625rem;
+    height: 14.375rem;
+    border-radius: 7px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.desc p {
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 0.938rem;
+}
+
+.contacts {
+    display: flex;
+    margin: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contacts svg {
+    width: 0.938rem;
+    height: 0.938rem;
+}
+
+.contacts a:hover {
+    filter: brightness(75%);
+}
